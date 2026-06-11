@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
-import { Suspense } from "react";
 import Link from "next/link";
 import "./globals.css";
 import AnalyticsProvider from "@/components/AnalyticsProvider";
@@ -47,8 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} h-full antialiased`}>
       <body className="min-h-full">
-        <Suspense fallback={null}>
-          <AnalyticsProvider>
+        <AnalyticsProvider>
             <div className="mx-auto flex min-h-dvh max-w-md flex-col">
               <header className="sticky top-0 z-10 border-b border-white/10 bg-[var(--background)]/85 backdrop-blur">
                 <div className="flex items-center justify-between px-4 py-3">
@@ -78,8 +76,7 @@ export default function RootLayout({
                 East Village · Lower East Side — community live-music guide
               </footer>
             </div>
-          </AnalyticsProvider>
-        </Suspense>
+        </AnalyticsProvider>
       </body>
     </html>
   );

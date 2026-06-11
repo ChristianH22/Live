@@ -21,3 +21,22 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
 }
+
+/* Leaflet venue pins: rose count badge, overriding the default white box. */
+.leaflet-div-icon.venue-pin {
+  background: transparent;
+  border: none;
+}
+.venue-pin .vp {
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  border-radius: 9999px;
+  background: #fb7185;
+  color: #0b0b0f;
+  font-weight: 700;
+  font-size: 12px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}

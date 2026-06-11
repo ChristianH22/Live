@@ -107,6 +107,30 @@ export function formatDateLabel(d: Date): string {
   });
 }
 
+export interface VenueGroup {
+  venue: LiveEvent["venue"];
+  events: LiveEvent[];
+}
+
+/**
+ * Collapse events into one entry per venue (keyed by venue name), keeping each
+ * venue's events sorted by start. Used for map pins — one pin per bar.
+ */
+export function groupByVenue(events: LiveEvent[]): VenueGroup[] {
+  const groups = new Map<string, VenueGroup>();
+  for (const e of events) {
+    const key = e.venue.name;
+    if (!groups.has(key)) groups.set(key, { venue: e.venue, events: [] });
+    groups.get(key)!.events.push(e);
+  }
+  return Array.from(groups.values())
+    .map((g) => ({
+      ...g,
+      events: g.events.slice().sort((a, b) => a.start.localeCompare(b.start)),
+    }))
+    .filter((g) => g.venue.lat != null && g.venue.lng != null);
+}
+
 export function formatTime(iso: string): string {
   return new Date(iso).toLocaleTimeString("en-US", {
     hour: "numeric",
