@@ -1,0 +1,349 @@
+{
+  "_note": "SAMPLE DATA — venue names/addresses are real EV/LES spots, but performers, dates and times are illustrative placeholders. Replace with verified real listings before sharing publicly. Dates are seeded around 2026-06-10.",
+  "events": [
+    {
+      "id": "arlenes-rocknroll-karaoke-0610",
+      "title": "Rock 'n' Roll Karaoke",
+      "performer": "Live backing band",
+      "venue": {
+        "name": "Arlene's Grocery",
+        "address": "95 Stanton St",
+        "neighborhood": "Lower East Side",
+        "website": "https://www.arlenesgrocery.net",
+        "instagram": "arlenesgrocery",
+        "lat": 40.7216,
+        "lng": -73.9879
+      },
+      "start": "2026-06-10T22:00:00-04:00",
+      "end": "2026-06-11T01:00:00-04:00",
+      "genre": ["Rock", "Karaoke"],
+      "cover": "Free",
+      "isFree": true,
+      "sourceUrl": "https://www.arlenesgrocery.net"
+    },
+    {
+      "id": "11thst-trad-session-0610",
+      "title": "Irish Trad Session",
+      "performer": "Open session players",
+      "venue": {
+        "name": "11th St Bar",
+        "address": "510 E 11th St",
+        "neighborhood": "East Village",
+        "website": "https://www.11thstbar.com",
+        "instagram": "11thstbar",
+        "lat": 40.7283,
+        "lng": -73.9805
+      },
+      "start": "2026-06-10T21:00:00-04:00",
+      "genre": ["Folk", "Traditional"],
+      "cover": "Free",
+      "isFree": true,
+      "sourceUrl": "https://www.11thstbar.com"
+    },
+    {
+      "id": "nublu-jazz-trio-0611",
+      "title": "Late Night Jazz Trio",
+      "performer": "The Avenue C Trio",
+      "venue": {
+        "name": "Nublu 151",
+        "address": "151 Avenue C",
+        "neighborhood": "East Village",
+        "website": "https://nublu.net",
+        "instagram": "nublu151",
+        "lat": 40.7257,
+        "lng": -73.9785
+      },
+      "start": "2026-06-11T23:00:00-04:00",
+      "genre": ["Jazz"],
+      "cover": "$10",
+      "isFree": false,
+      "ticketUrl": "https://nublu.net",
+      "sourceUrl": "https://nublu.net"
+    },
+    {
+      "id": "rockwood-songwriter-0611",
+      "title": "Singer-Songwriter Night",
+      "performer": "Rotating local acts",
+      "venue": {
+        "name": "Rockwood Music Hall",
+        "address": "196 Allen St",
+        "neighborhood": "Lower East Side",
+        "website": "https://rockwoodmusichall.com",
+        "instagram": "rockwoodmusichall",
+        "lat": 40.7211,
+        "lng": -73.9893
+      },
+      "start": "2026-06-11T19:00:00-04:00",
+      "genre": ["Singer-Songwriter", "Indie"],
+      "cover": "Free",
+      "isFree": true,
+      "sourceUrl": "https://rockwoodmusichall.com"
+    },
+    {
+      "id": "pianos-indie-showcase-0612",
+      "title": "Indie Showcase",
+      "performer": "Four bands, front room",
+      "venue": {
+        "name": "Pianos",
+        "address": "158 Ludlow St",
+        "neighborhood": "Lower East Side",
+        "website": "https://pianosnyc.com",
+        "instagram": "pianosnyc",
+        "lat": 40.7207,
+        "lng": -73.9882
+      },
+      "start": "2026-06-12T20:00:00-04:00",
+      "genre": ["Indie", "Rock"],
+      "cover": "Free",
+      "isFree": true,
+      "sourceUrl": "https://pianosnyc.com"
+    },
+    {
+      "id": "ottos-surf-night-0612",
+      "title": "Surf Rock Night",
+      "performer": "The Tiki Torches",
+      "venue": {
+        "name": "Otto's Shrunken Head",
+        "address": "538 E 14th St",
+        "neighborhood": "East Village",
+        "website": "https://www.ottosshrunkenhead.com",
+        "instagram": "ottosshrunkenhead",
+        "lat": 40.7295,
+        "lng": -73.9776
+      },
+      "start": "2026-06-12T21:00:00-04:00",
+      "genre": ["Rock", "Surf"],
+      "cover": "Free",
+      "isFree": true,
+      "sourceUrl": "https://www.ottosshrunkenhead.com"
+    },
+    {
+      "id": "drom-latin-night-0613",
+      "title": "Latin Soul Night",
+      "performer": "Orquesta Avenida",
+      "venue": {
+        "name": "DROM",
+        "address": "85 Avenue A",
+        "neighborhood": "East Village",
+        "website": "https://dromnyc.com",
+        "instagram": "dromnyc",
+        "lat": 40.7244,
+        "lng": -73.9846
+      },
+      "start": "2026-06-13T20:30:00-04:00",
+      "genre": ["Latin", "Funk"],
+      "cover": "$15",
+      "isFree": false,
+      "ticketUrl": "https://dromnyc.com",
+      "sourceUrl": "https://dromnyc.com"
+    },
+    {
+      "id": "169bar-blues-0613",
+      "title": "Saturday Blues",
+      "performer": "Delta Drifters",
+      "venue": {
+        "name": "169 Bar",
+        "address": "169 E Broadway",
+        "neighborhood": "Lower East Side",
+        "website": "https://www.169barnyc.com",
+        "instagram": "169bar",
+        "lat": 40.7142,
+        "lng": -73.9899
+      },
+      "start": "2026-06-13T22:00:00-04:00",
+      "genre": ["Blues"],
+      "cover": "Free",
+      "isFree": true,
+      "sourceUrl": "https://www.169barnyc.com"
+    },
+    {
+      "id": "coney-island-baby-punk-0613",
+      "title": "Punk Matinee",
+      "performer": "Three local bands",
+      "venue": {
+        "name": "Coney Island Baby",
+        "address": "169 Avenue A",
+        "neighborhood": "East Village",
+        "instagram": "coneyislandbaby_nyc",
+        "lat": 40.7270,
+        "lng": -73.9831
+      },
+      "start": "2026-06-13T16:00:00-04:00",
+      "genre": ["Punk", "Rock"],
+      "cover": "$12",
+      "isFree": false,
+      "sourceUrl": "https://www.instagram.com/coneyislandbaby_nyc"
+    },
+    {
+      "id": "nublu-brunch-funk-0614",
+      "title": "Sunday Funk Brunch",
+      "performer": "House band",
+      "venue": {
+        "name": "Nublu 151",
+        "address": "151 Avenue C",
+        "neighborhood": "East Village",
+        "website": "https://nublu.net",
+        "instagram": "nublu151",
+        "lat": 40.7257,
+        "lng": -73.9785
+      },
+      "start": "2026-06-14T13:00:00-04:00",
+      "genre": ["Funk", "Brunch"],
+      "cover": "Free",
+      "isFree": true,
+      "sourceUrl": "https://nublu.net"
+    },
+    {
+      "id": "rockwood-gospel-brunch-0614",
+      "title": "Sunday Soul Brunch",
+      "performer": "Allen St Singers",
+      "venue": {
+        "name": "Rockwood Music Hall",
+        "address": "196 Allen St",
+        "neighborhood": "Lower East Side",
+        "website": "https://rockwoodmusichall.com",
+        "instagram": "rockwoodmusichall",
+        "lat": 40.7211,
+        "lng": -73.9893
+      },
+      "start": "2026-06-14T12:00:00-04:00",
+      "genre": ["Soul", "Brunch"],
+      "cover": "Free",
+      "isFree": true,
+      "sourceUrl": "https://rockwoodmusichall.com"
+    },
+    {
+      "id": "pianos-open-mic-0615",
+      "title": "Monday Open Mic",
+      "performer": "Sign-up at the door",
+      "venue": {
+        "name": "Pianos",
+        "address": "158 Ludlow St",
+        "neighborhood": "Lower East Side",
+        "website": "https://pianosnyc.com",
+        "instagram": "pianosnyc",
+        "lat": 40.7207,
+        "lng": -73.9882
+      },
+      "start": "2026-06-15T19:30:00-04:00",
+      "genre": ["Open Mic"],
+      "cover": "Free",
+      "isFree": true,
+      "sourceUrl": "https://pianosnyc.com"
+    },
+    {
+      "id": "arlenes-open-mic-0616",
+      "title": "Tuesday Open Mic",
+      "performer": "Hosted, all welcome",
+      "venue": {
+        "name": "Arlene's Grocery",
+        "address": "95 Stanton St",
+        "neighborhood": "Lower East Side",
+        "website": "https://www.arlenesgrocery.net",
+        "instagram": "arlenesgrocery",
+        "lat": 40.7216,
+        "lng": -73.9879
+      },
+      "start": "2026-06-16T20:00:00-04:00",
+      "genre": ["Open Mic"],
+      "cover": "Free",
+      "isFree": true,
+      "sourceUrl": "https://www.arlenesgrocery.net"
+    },
+    {
+      "id": "berlin-dj-soul-0617",
+      "title": "Deep Soul 45s",
+      "performer": "Resident DJs",
+      "venue": {
+        "name": "Berlin Under A",
+        "address": "25 Avenue A",
+        "neighborhood": "East Village",
+        "instagram": "berlinundera",
+        "lat": 40.7236,
+        "lng": -73.9871
+      },
+      "start": "2026-06-17T21:00:00-04:00",
+      "genre": ["Soul", "DJ"],
+      "cover": "Free",
+      "isFree": true,
+      "sourceUrl": "https://www.instagram.com/berlinundera"
+    },
+    {
+      "id": "nublu-jazz-jam-0617",
+      "title": "Midweek Jazz Jam",
+      "performer": "Open jam, bring your axe",
+      "venue": {
+        "name": "Nublu 151",
+        "address": "151 Avenue C",
+        "neighborhood": "East Village",
+        "website": "https://nublu.net",
+        "instagram": "nublu151",
+        "lat": 40.7257,
+        "lng": -73.9785
+      },
+      "start": "2026-06-17T22:30:00-04:00",
+      "genre": ["Jazz", "Open Mic"],
+      "cover": "Free",
+      "isFree": true,
+      "sourceUrl": "https://nublu.net"
+    },
+    {
+      "id": "rockwood-folk-0618",
+      "title": "Folk Showcase",
+      "performer": "Rotating songwriters",
+      "venue": {
+        "name": "Rockwood Music Hall",
+        "address": "196 Allen St",
+        "neighborhood": "Lower East Side",
+        "website": "https://rockwoodmusichall.com",
+        "instagram": "rockwoodmusichall",
+        "lat": 40.7211,
+        "lng": -73.9893
+      },
+      "start": "2026-06-18T20:00:00-04:00",
+      "genre": ["Folk", "Singer-Songwriter"],
+      "cover": "Free",
+      "isFree": true,
+      "sourceUrl": "https://rockwoodmusichall.com"
+    },
+    {
+      "id": "ottos-rockabilly-0619",
+      "title": "Rockabilly Friday",
+      "performer": "The Greasers",
+      "venue": {
+        "name": "Otto's Shrunken Head",
+        "address": "538 E 14th St",
+        "neighborhood": "East Village",
+        "website": "https://www.ottosshrunkenhead.com",
+        "instagram": "ottosshrunkenhead",
+        "lat": 40.7295,
+        "lng": -73.9776
+      },
+      "start": "2026-06-19T21:00:00-04:00",
+      "genre": ["Rock", "Rockabilly"],
+      "cover": "Free",
+      "isFree": true,
+      "sourceUrl": "https://www.ottosshrunkenhead.com"
+    },
+    {
+      "id": "drom-world-night-0620",
+      "title": "Global Beats Night",
+      "performer": "Balkan Brass Collective",
+      "venue": {
+        "name": "DROM",
+        "address": "85 Avenue A",
+        "neighborhood": "East Village",
+        "website": "https://dromnyc.com",
+        "instagram": "dromnyc",
+        "lat": 40.7244,
+        "lng": -73.9846
+      },
+      "start": "2026-06-20T21:00:00-04:00",
+      "genre": ["World", "Funk"],
+      "cover": "$18",
+      "isFree": false,
+      "ticketUrl": "https://dromnyc.com",
+      "sourceUrl": "https://dromnyc.com"
+    }
+  ]
+}
