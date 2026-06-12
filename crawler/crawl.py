@@ -19,6 +19,24 @@ for _stream in (sys.stdout, sys.stderr):
     except Exception:
         pass
 
+
+def _load_dotenv() -> bool:
+    """Load KEY=VALUE pairs from crawler/.env into the environment (no deps).
+
+    Returns True if the file existed. Existing env vars are not overwritten.
+    """
+    env_path = os.path.join(os.path.dirname(__file__), ".env")
+    if not os.path.exists(env_path):
+        return False
+    with open(env_path, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, _, val = line.partition("=")
+            os.environ.setdefault(key.strip(), val.strip().strip('"').strip("'"))
+    return True
+
 from . import config
 from .discovery import discover_venues
 from .extract import analyze_venue
@@ -36,12 +54,17 @@ def main() -> None:
     parser.add_argument("--out", type=str, default="", help="output .txt path")
     args = parser.parse_args()
 
+    _load_dotenv()  # picks up crawler/.env if present
+
     amenities = (
         [a.strip() for a in args.amenities.split(",") if a.strip()]
         if args.amenities
         else config.DEFAULT_AMENITIES
     )
     use_llm = not args.no_llm and bool(os.environ.get("ANTHROPIC_API_KEY"))
+    if not use_llm and not args.no_llm:
+        print("      note: no ANTHROPIC_API_KEY found — running heuristics only "
+              "(set it in crawler/.env to enable Haiku).")
 
     print(f"[1/3] Discovering venues in EV/LES via OSM Overpass ({', '.join(amenities)})…")
     venues = discover_venues(amenities)
